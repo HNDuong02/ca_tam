@@ -24,6 +24,9 @@ Route::get('/', function () {
 Route::get('/san-pham', [ProductController::class, 'index'])->name('products.index');
 Route::get('/san-pham/{slug}', [ProductController::class, 'show'])->name('products.show');
 
+Route::get('/he-thong-trang-trai', [\App\Http\Controllers\FarmController::class, 'index'])->name('farms.index');
+Route::get('/trang-trai/{slug}', [\App\Http\Controllers\FarmController::class, 'show'])->name('farms.show');
+
 Route::get('/bai-viet', [App\Http\Controllers\PostController::class, 'index'])->name('posts.index');
 Route::get('/bai-viet/{slug}', [App\Http\Controllers\PostController::class, 'show'])->name('posts.show');
 

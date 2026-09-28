@@ -30,6 +30,7 @@
                     class="{{ request()->routeIs('products.*') ? 'text-brand border-b-2 border-brand' : 'hover:text-brand transition' }} pb-1">Sản phẩm</a>
                 <a href="{{ route('pages.product_story') }}" class="{{ request()->routeIs('pages.product_story') ? 'text-brand border-b-2 border-brand' : 'hover:text-brand transition' }} pb-1">Câu chuyện sản phẩm</a>
                 <a href="{{ route('pages.company_intro') }}" class="{{ request()->routeIs('pages.company_intro') ? 'text-brand border-b-2 border-brand' : 'hover:text-brand transition' }} pb-1">Giới thiệu</a>
+                <a href="{{ route('farms.index') }}" class="{{ request()->routeIs('farms.*') ? 'text-brand border-b-2 border-brand' : 'hover:text-brand transition' }} pb-1">Trang trại</a>
                 <a href="{{ route('posts.index') }}" class="{{ request()->routeIs('posts.*') ? 'text-brand border-b-2 border-brand' : 'hover:text-brand transition' }} pb-1">Tin tức</a>
                 <a href="{{ route('contact.index') }}" class="{{ request()->routeIs('contact.*') ? 'text-brand border-b-2 border-brand' : 'hover:text-brand transition' }} pb-1">Liên hệ</a>
             </nav>
@@ -81,6 +82,7 @@
             <a href="{{ route('products.index') }}" class="block py-3 {{ request()->routeIs('products.*') ? 'text-brand font-bold' : 'hover:text-brand' }} border-b border-gray-50">Sản phẩm</a>
             <a href="{{ route('pages.product_story') }}" class="block py-3 {{ request()->routeIs('pages.product_story') ? 'text-brand font-bold' : 'hover:text-brand' }} border-b border-gray-50">Câu chuyện sản phẩm</a>
             <a href="{{ route('pages.company_intro') }}" class="block py-3 {{ request()->routeIs('pages.company_intro') ? 'text-brand font-bold' : 'hover:text-brand' }} border-b border-gray-50">Giới thiệu</a>
+            <a href="{{ route('farms.index') }}" class="block py-3 {{ request()->routeIs('farms.*') ? 'text-brand font-bold' : 'hover:text-brand' }} border-b border-gray-50">Trang trại</a>
             <a href="{{ route('posts.index') }}" class="block py-3 {{ request()->routeIs('posts.*') ? 'text-brand font-bold' : 'hover:text-brand' }} border-b border-gray-50">Tin tức</a>
             <a href="{{ route('contact.index') }}" class="block py-3 {{ request()->routeIs('contact.*') ? 'text-brand font-bold' : 'hover:text-brand' }}">Liên hệ</a>
         </nav>
